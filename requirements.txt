@@ -1,0 +1,17 @@
+jupyter
+notebook
+nbformat
+matplotlib
+ipywidgets
+pandas
+scikit-learn
+numpy
+networkx
+pymupdf4llm
+pymupdf
+sympy
+plotly
+line_profiler
+tqdm
+ipytest
+icecream
