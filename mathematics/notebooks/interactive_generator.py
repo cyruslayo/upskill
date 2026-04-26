@@ -1,9 +1,7 @@
-"""Source-of-truth generator for retrieval-first Colab notebooks.
+"""Legacy Level 0 generator for retrieval-first Colab notebooks.
 
-This generator emits both student notebooks and instructor solution notebooks
-from the same exercise definitions. It is the v1 path for the interactive
-learning environment; older generators can be migrated into this shape over
-time.
+Use ``generate_clean_notebooks.py`` for all current notebook authoring. This
+module is kept only as a historical reference for the first interactive pass.
 """
 from __future__ import annotations
 

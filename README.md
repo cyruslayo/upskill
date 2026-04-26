@@ -30,9 +30,10 @@ This repo now includes a Colab-first interactive layer:
 
 - `learning_tools.py` provides progress tracking, retrieval checks, spaced review scheduling, staged hints, and mastery dashboards.
 - `curriculum/skills.json` defines the skill registry used by the review system.
-- `mathematics/notebooks/interactive_generator.py` is the source-of-truth generator for the Level 0 foundations notebooks and their solution notebooks.
-- `mathematics/notebooks/batch_migrate_interactive.py` wraps the legacy notebooks in the same interactive shell.
-- `curriculum/legacy_solution_bank.py` and `curriculum/complete_legacy_solutions.py` provide the completed instructor solutions for the migrated legacy notebooks.
+- `mathematics/notebooks/clean_specs.py` defines the lesson specs for the rebuilt curriculum.
+- `mathematics/notebooks/generate_clean_notebooks.py` is the source-of-truth generator for all student and instructor notebooks.
+- `mathematics/legacy/notebooks/` and `mathematics/legacy/solutions/` preserve the pre-rebuild notebooks.
+- `curriculum/legacy_solution_bank.py` remains as a reference helper for older implementations.
 - Progress is stored in Google Drive when running in Colab, with a local JSON fallback.
 
 The intended learning loop is:
@@ -46,7 +47,7 @@ The intended learning loop is:
 
 ## Learning Path
 
-The curriculum is structured into a new Level 0 foundations ramp, 7 Math Foundations notebooks, and 41 batch-migrated legacy lessons. The combined legacy notebooks remain combined where the original curriculum did that intentionally.
+The curriculum is structured into a Level 0 foundations ramp, 7 Math Foundations notebooks, and the algorithms and machine-learning sequence. Every current notebook is generated from the same clean spec format, and the combined notebooks remain combined where the original curriculum did that intentionally.
 
 ### Level 0: Foundations Track
 Focus: absolute fundamentals before algebra and algorithms.
@@ -90,8 +91,9 @@ Focus: AI game playing algorithms.
 *   **Notebooks 37-43**: Minimax and Game Trees, Neuroevolution (Fogel's Tic-Tac-Toe & Blondie24), Convolutional Neuroevolution.
 
 ## Project Structure
-- `mathematics/notebooks/`: Contains the student-facing notebooks, including the new Level 0 foundations and the interactive-v1 migrated legacy lessons.
+- `mathematics/notebooks/`: Contains the generated student-facing notebooks.
 - `mathematics/solutions/`: Contains the completed instructor solution notebooks for the same set.
+- `mathematics/legacy/`: Contains archived notebooks from before the clean rebuild.
 - `mathematics/textbooks/`: Markdown and PDF textbooks acting as foundational references.
 - `datasets/`: Toy datasets (CSV files) loaded in later regression and classification modules.
 - `curriculum/`: Shared curriculum metadata, the legacy solution bank, and the notebook completion indexes.
@@ -111,29 +113,28 @@ Focus: AI game playing algorithms.
 
 ## Regeneration and Validation
 
-Generate the interactive Level 0 notebooks and instructor solutions:
+Archive the current notebooks before replacing canonical paths:
 
 ```bash
-python mathematics/notebooks/interactive_generator.py
+mkdir mathematics\legacy\notebooks mathematics\legacy\solutions
+copy mathematics\notebooks\*.ipynb mathematics\legacy\notebooks\
+copy mathematics\solutions\*.ipynb mathematics\legacy\solutions\
 ```
 
-Batch-migrate legacy notebooks into the interactive shell:
+Regenerate every student notebook, instructor solution notebook, and curriculum metadata file:
 
 ```bash
-python mathematics/notebooks/batch_migrate_interactive.py
+python mathematics/notebooks/generate_clean_notebooks.py
 ```
 
-Complete the migrated legacy instructor solution notebooks:
+Validate the generated notebooks:
 
 ```bash
-python curriculum/complete_legacy_solutions.py
-```
-
-Run the verification checks:
-
-```bash
-python -m unittest tests.test_learning_tools
-python -m unittest tests.test_legacy_solution_bank
 python tests/validate_interactive_notebooks.py
-python tests/audit_solution_placeholders.py
+```
+
+Run the unit tests. On this Windows setup, use `PYTHONPATH=.` and disable the pytest cache to avoid local cache-directory permission noise:
+
+```bash
+$env:PYTHONPATH='.'; pytest -q -p no:cacheprovider tests\test_learning_tools.py tests\test_legacy_solution_bank.py
 ```

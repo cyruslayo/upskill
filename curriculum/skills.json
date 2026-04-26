@@ -4,27 +4,27 @@
     {
       "level": 0,
       "title": "Foundations",
-      "description": "Pre-algebra, Python arithmetic, functions, and graphs."
+      "description": "Pre-algebra, Python arithmetic, functions, and placement."
     },
     {
       "level": 1,
       "title": "Algebra and Computational Thinking",
-      "description": "Linear equations, number systems, coding primitives, and basic proofs."
+      "description": "Linear equations, coding primitives, number systems, and recurrence."
     },
     {
       "level": 2,
       "title": "Calculus and Optimization",
-      "description": "Derivatives, chain rule, extrema, roots, gradient descent, and differential equations."
+      "description": "Derivatives, roots, gradient descent, differential equations, and dynamical models."
     },
     {
       "level": 3,
       "title": "Linear Algebra and Data Geometry",
-      "description": "Vectors, matrices, transformations, elimination, and pseudoinverse methods."
+      "description": "Vectors, matrices, elimination, simplex, and pseudoinverse methods."
     },
     {
       "level": 4,
       "title": "Algorithms",
-      "description": "Search, sorting, recursion, graphs, hash tables, and complexity."
+      "description": "Search, sorting, recursion, graphs, games, hash tables, and complexity."
     },
     {
       "level": 5,
@@ -34,7 +34,7 @@
     {
       "level": 6,
       "title": "Neural Networks",
-      "description": "Logistic units, forward propagation, backpropagation, and convolution basics."
+      "description": "Forward propagation, training loops, convolution basics, and model behavior."
     },
     {
       "level": 7,
@@ -44,60 +44,1874 @@
   ],
   "skills": [
     {
-      "id": "py.arithmetic.expressions",
-      "title": "Evaluate Python arithmetic expressions",
-      "notebook": "math_00_python_arithmetic.ipynb",
+      "id": "foundation.math_00_diagnostic.retrieval",
+      "title": "Retrieval for Math 00: Diagnostic and Placement",
+      "notebook": "math_00_diagnostic.ipynb",
       "level": 0,
       "prerequisites": [],
-      "tags": ["python", "arithmetic"]
+      "tags": [
+        "foundations",
+        "math_00_diagnostic"
+      ]
     },
     {
-      "id": "py.variables.functions",
-      "title": "Use variables and simple functions",
+      "id": "foundation.math_00_diagnostic.transfer",
+      "title": "Implementation for Math 00: Diagnostic and Placement",
+      "notebook": "math_00_diagnostic.ipynb",
+      "level": 0,
+      "prerequisites": [],
+      "tags": [
+        "foundations",
+        "math_00_diagnostic"
+      ]
+    },
+    {
+      "id": "foundation.math_00_python_arithmetic.retrieval",
+      "title": "Retrieval for Math 00A: Python Arithmetic and Variables",
       "notebook": "math_00_python_arithmetic.ipynb",
       "level": 0,
-      "prerequisites": ["py.arithmetic.expressions"],
-      "tags": ["python", "functions"]
+      "prerequisites": [
+        "foundation.math_00_diagnostic.retrieval",
+        "foundation.math_00_diagnostic.transfer"
+      ],
+      "tags": [
+        "foundations",
+        "math_00_python_arithmetic"
+      ]
     },
     {
-      "id": "math.pre_algebra.order_operations",
-      "title": "Apply order of operations",
+      "id": "foundation.math_00_python_arithmetic.implementation",
+      "title": "Implementation for Math 00A: Python Arithmetic and Variables",
+      "notebook": "math_00_python_arithmetic.ipynb",
+      "level": 0,
+      "prerequisites": [
+        "foundation.math_00_diagnostic.retrieval",
+        "foundation.math_00_diagnostic.transfer"
+      ],
+      "tags": [
+        "foundations",
+        "math_00_python_arithmetic"
+      ]
+    },
+    {
+      "id": "foundation.math_00_python_arithmetic.transfer",
+      "title": "Transfer for Math 00A: Python Arithmetic and Variables",
+      "notebook": "math_00_python_arithmetic.ipynb",
+      "level": 0,
+      "prerequisites": [
+        "foundation.math_00_diagnostic.retrieval",
+        "foundation.math_00_diagnostic.transfer"
+      ],
+      "tags": [
+        "foundations",
+        "math_00_python_arithmetic"
+      ]
+    },
+    {
+      "id": "foundation.math_00_pre_algebra.retrieval",
+      "title": "Retrieval for Math 00B: Pre-Algebra Foundations",
       "notebook": "math_00_pre_algebra.ipynb",
       "level": 0,
-      "prerequisites": ["py.arithmetic.expressions"],
-      "tags": ["pre-algebra"]
+      "prerequisites": [
+        "foundation.math_00_python_arithmetic.implementation",
+        "foundation.math_00_python_arithmetic.transfer"
+      ],
+      "tags": [
+        "foundations",
+        "math_00_pre_algebra"
+      ]
     },
     {
-      "id": "math.pre_algebra.fractions",
-      "title": "Compute with fractions and proportions",
+      "id": "foundation.math_00_pre_algebra.implementation",
+      "title": "Implementation for Math 00B: Pre-Algebra Foundations",
       "notebook": "math_00_pre_algebra.ipynb",
       "level": 0,
-      "prerequisites": ["math.pre_algebra.order_operations"],
-      "tags": ["pre-algebra", "fractions"]
+      "prerequisites": [
+        "foundation.math_00_python_arithmetic.implementation",
+        "foundation.math_00_python_arithmetic.transfer"
+      ],
+      "tags": [
+        "foundations",
+        "math_00_pre_algebra"
+      ]
     },
     {
-      "id": "math.functions.input_output",
-      "title": "Read functions as input-output machines",
+      "id": "foundation.math_00_pre_algebra.transfer",
+      "title": "Transfer for Math 00B: Pre-Algebra Foundations",
+      "notebook": "math_00_pre_algebra.ipynb",
+      "level": 0,
+      "prerequisites": [
+        "foundation.math_00_python_arithmetic.implementation",
+        "foundation.math_00_python_arithmetic.transfer"
+      ],
+      "tags": [
+        "foundations",
+        "math_00_pre_algebra"
+      ]
+    },
+    {
+      "id": "foundation.math_00_functions_and_graphs.retrieval",
+      "title": "Retrieval for Math 00C: Functions, Tables, and Graphs",
       "notebook": "math_00_functions_and_graphs.ipynb",
       "level": 0,
-      "prerequisites": ["py.variables.functions"],
-      "tags": ["functions", "graphs"]
+      "prerequisites": [
+        "foundation.math_00_pre_algebra.implementation",
+        "foundation.math_00_pre_algebra.transfer"
+      ],
+      "tags": [
+        "foundations",
+        "math_00_functions_and_graphs"
+      ]
     },
     {
-      "id": "math.functions.graph_tables",
-      "title": "Connect tables, formulas, and graphs",
+      "id": "foundation.math_00_functions_and_graphs.implementation",
+      "title": "Implementation for Math 00C: Functions, Tables, and Graphs",
       "notebook": "math_00_functions_and_graphs.ipynb",
       "level": 0,
-      "prerequisites": ["math.functions.input_output"],
-      "tags": ["functions", "graphs"]
+      "prerequisites": [
+        "foundation.math_00_pre_algebra.implementation",
+        "foundation.math_00_pre_algebra.transfer"
+      ],
+      "tags": [
+        "foundations",
+        "math_00_functions_and_graphs"
+      ]
     },
     {
-      "id": "math.linear_equations.solve_ax_b_c",
-      "title": "Solve ax + b = c",
+      "id": "foundation.math_00_functions_and_graphs.transfer",
+      "title": "Transfer for Math 00C: Functions, Tables, and Graphs",
+      "notebook": "math_00_functions_and_graphs.ipynb",
+      "level": 0,
+      "prerequisites": [
+        "foundation.math_00_pre_algebra.implementation",
+        "foundation.math_00_pre_algebra.transfer"
+      ],
+      "tags": [
+        "foundations",
+        "math_00_functions_and_graphs"
+      ]
+    },
+    {
+      "id": "math.math_01_algebra_linear_equations.retrieval",
+      "title": "Retrieval for Math 01: Algebra - Linear Equations",
       "notebook": "math_01_algebra_linear_equations.ipynb",
       "level": 1,
-      "prerequisites": ["math.pre_algebra.fractions", "py.variables.functions"],
-      "tags": ["algebra"]
+      "prerequisites": [
+        "foundation.math_00_functions_and_graphs.implementation",
+        "foundation.math_00_functions_and_graphs.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_01_algebra_linear_equations"
+      ]
+    },
+    {
+      "id": "math.math_01_algebra_linear_equations.implementation",
+      "title": "Implementation for Math 01: Algebra - Linear Equations",
+      "notebook": "math_01_algebra_linear_equations.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "foundation.math_00_functions_and_graphs.implementation",
+        "foundation.math_00_functions_and_graphs.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_01_algebra_linear_equations"
+      ]
+    },
+    {
+      "id": "math.math_01_algebra_linear_equations.transfer",
+      "title": "Transfer for Math 01: Algebra - Linear Equations",
+      "notebook": "math_01_algebra_linear_equations.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "foundation.math_00_functions_and_graphs.implementation",
+        "foundation.math_00_functions_and_graphs.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_01_algebra_linear_equations"
+      ]
+    },
+    {
+      "id": "math.math_02_calculus_derivatives.retrieval",
+      "title": "Retrieval for Math 02: Calculus - Derivatives and the Power Rule",
+      "notebook": "math_02_calculus_derivatives.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_01_algebra_linear_equations.implementation",
+        "math.math_01_algebra_linear_equations.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_02_calculus_derivatives"
+      ]
+    },
+    {
+      "id": "math.math_02_calculus_derivatives.implementation",
+      "title": "Implementation for Math 02: Calculus - Derivatives and the Power Rule",
+      "notebook": "math_02_calculus_derivatives.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_01_algebra_linear_equations.implementation",
+        "math.math_01_algebra_linear_equations.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_02_calculus_derivatives"
+      ]
+    },
+    {
+      "id": "math.math_02_calculus_derivatives.transfer",
+      "title": "Transfer for Math 02: Calculus - Derivatives and the Power Rule",
+      "notebook": "math_02_calculus_derivatives.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_01_algebra_linear_equations.implementation",
+        "math.math_01_algebra_linear_equations.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_02_calculus_derivatives"
+      ]
+    },
+    {
+      "id": "math.math_03_calculus_chain_rule.retrieval",
+      "title": "Retrieval for Math 03: Calculus - The Chain Rule",
+      "notebook": "math_03_calculus_chain_rule.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_02_calculus_derivatives.implementation",
+        "math.math_02_calculus_derivatives.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_03_calculus_chain_rule"
+      ]
+    },
+    {
+      "id": "math.math_03_calculus_chain_rule.implementation",
+      "title": "Implementation for Math 03: Calculus - The Chain Rule",
+      "notebook": "math_03_calculus_chain_rule.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_02_calculus_derivatives.implementation",
+        "math.math_02_calculus_derivatives.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_03_calculus_chain_rule"
+      ]
+    },
+    {
+      "id": "math.math_03_calculus_chain_rule.transfer",
+      "title": "Transfer for Math 03: Calculus - The Chain Rule",
+      "notebook": "math_03_calculus_chain_rule.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_02_calculus_derivatives.implementation",
+        "math.math_02_calculus_derivatives.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_03_calculus_chain_rule"
+      ]
+    },
+    {
+      "id": "math.math_04_calculus_local_extrema.retrieval",
+      "title": "Retrieval for Math 04: Calculus - Local Extrema",
+      "notebook": "math_04_calculus_local_extrema.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_03_calculus_chain_rule.implementation",
+        "math.math_03_calculus_chain_rule.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_04_calculus_local_extrema"
+      ]
+    },
+    {
+      "id": "math.math_04_calculus_local_extrema.implementation",
+      "title": "Implementation for Math 04: Calculus - Local Extrema",
+      "notebook": "math_04_calculus_local_extrema.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_03_calculus_chain_rule.implementation",
+        "math.math_03_calculus_chain_rule.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_04_calculus_local_extrema"
+      ]
+    },
+    {
+      "id": "math.math_04_calculus_local_extrema.transfer",
+      "title": "Transfer for Math 04: Calculus - Local Extrema",
+      "notebook": "math_04_calculus_local_extrema.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_03_calculus_chain_rule.implementation",
+        "math.math_03_calculus_chain_rule.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_04_calculus_local_extrema"
+      ]
+    },
+    {
+      "id": "math.math_05_linear_algebra_vectors.retrieval",
+      "title": "Retrieval for Math 05: Linear Algebra - Vectors",
+      "notebook": "math_05_linear_algebra_vectors.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "math.math_04_calculus_local_extrema.implementation",
+        "math.math_04_calculus_local_extrema.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_05_linear_algebra_vectors"
+      ]
+    },
+    {
+      "id": "math.math_05_linear_algebra_vectors.implementation",
+      "title": "Implementation for Math 05: Linear Algebra - Vectors",
+      "notebook": "math_05_linear_algebra_vectors.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "math.math_04_calculus_local_extrema.implementation",
+        "math.math_04_calculus_local_extrema.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_05_linear_algebra_vectors"
+      ]
+    },
+    {
+      "id": "math.math_05_linear_algebra_vectors.transfer",
+      "title": "Transfer for Math 05: Linear Algebra - Vectors",
+      "notebook": "math_05_linear_algebra_vectors.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "math.math_04_calculus_local_extrema.implementation",
+        "math.math_04_calculus_local_extrema.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_05_linear_algebra_vectors"
+      ]
+    },
+    {
+      "id": "math.math_06_linear_algebra_matrices.retrieval",
+      "title": "Retrieval for Math 06: Linear Algebra - Matrices",
+      "notebook": "math_06_linear_algebra_matrices.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "math.math_05_linear_algebra_vectors.implementation",
+        "math.math_05_linear_algebra_vectors.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_06_linear_algebra_matrices"
+      ]
+    },
+    {
+      "id": "math.math_06_linear_algebra_matrices.implementation",
+      "title": "Implementation for Math 06: Linear Algebra - Matrices",
+      "notebook": "math_06_linear_algebra_matrices.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "math.math_05_linear_algebra_vectors.implementation",
+        "math.math_05_linear_algebra_vectors.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_06_linear_algebra_matrices"
+      ]
+    },
+    {
+      "id": "math.math_06_linear_algebra_matrices.transfer",
+      "title": "Transfer for Math 06: Linear Algebra - Matrices",
+      "notebook": "math_06_linear_algebra_matrices.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "math.math_05_linear_algebra_vectors.implementation",
+        "math.math_05_linear_algebra_vectors.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_06_linear_algebra_matrices"
+      ]
+    },
+    {
+      "id": "math.math_07_calculus_differential_equations.retrieval",
+      "title": "Retrieval for Math 07: Calculus - Differential Equations",
+      "notebook": "math_07_calculus_differential_equations.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_06_linear_algebra_matrices.implementation",
+        "math.math_06_linear_algebra_matrices.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_07_calculus_differential_equations"
+      ]
+    },
+    {
+      "id": "math.math_07_calculus_differential_equations.implementation",
+      "title": "Implementation for Math 07: Calculus - Differential Equations",
+      "notebook": "math_07_calculus_differential_equations.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_06_linear_algebra_matrices.implementation",
+        "math.math_06_linear_algebra_matrices.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_07_calculus_differential_equations"
+      ]
+    },
+    {
+      "id": "math.math_07_calculus_differential_equations.transfer",
+      "title": "Transfer for Math 07: Calculus - Differential Equations",
+      "notebook": "math_07_calculus_differential_equations.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "math.math_06_linear_algebra_matrices.implementation",
+        "math.math_06_linear_algebra_matrices.transfer"
+      ],
+      "tags": [
+        "math-foundations",
+        "math_07_calculus_differential_equations"
+      ]
+    },
+    {
+      "id": "algorithms.01_introductory_coding.retrieval",
+      "title": "Retrieval for Algorithms 01: Introductory Coding",
+      "notebook": "01_introductory_coding.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "math.math_07_calculus_differential_equations.implementation",
+        "math.math_07_calculus_differential_equations.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "01_introductory_coding"
+      ]
+    },
+    {
+      "id": "algorithms.01_introductory_coding.implementation",
+      "title": "Implementation for Algorithms 01: Introductory Coding",
+      "notebook": "01_introductory_coding.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "math.math_07_calculus_differential_equations.implementation",
+        "math.math_07_calculus_differential_equations.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "01_introductory_coding"
+      ]
+    },
+    {
+      "id": "algorithms.01_introductory_coding.transfer",
+      "title": "Transfer for Algorithms 01: Introductory Coding",
+      "notebook": "01_introductory_coding.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "math.math_07_calculus_differential_equations.implementation",
+        "math.math_07_calculus_differential_equations.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "01_introductory_coding"
+      ]
+    },
+    {
+      "id": "algorithms.02_number_systems.retrieval",
+      "title": "Retrieval for Algorithms 02: Number Systems",
+      "notebook": "02_number_systems.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.01_introductory_coding.implementation",
+        "algorithms.01_introductory_coding.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "02_number_systems"
+      ]
+    },
+    {
+      "id": "algorithms.02_number_systems.implementation",
+      "title": "Implementation for Algorithms 02: Number Systems",
+      "notebook": "02_number_systems.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.01_introductory_coding.implementation",
+        "algorithms.01_introductory_coding.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "02_number_systems"
+      ]
+    },
+    {
+      "id": "algorithms.02_number_systems.transfer",
+      "title": "Transfer for Algorithms 02: Number Systems",
+      "notebook": "02_number_systems.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.01_introductory_coding.implementation",
+        "algorithms.01_introductory_coding.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "02_number_systems"
+      ]
+    },
+    {
+      "id": "algorithms.03_recursive_sequences.retrieval",
+      "title": "Retrieval for Algorithms 03: Recursive Sequences",
+      "notebook": "03_recursive_sequences.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.02_number_systems.implementation",
+        "algorithms.02_number_systems.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "03_recursive_sequences"
+      ]
+    },
+    {
+      "id": "algorithms.03_recursive_sequences.implementation",
+      "title": "Implementation for Algorithms 03: Recursive Sequences",
+      "notebook": "03_recursive_sequences.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.02_number_systems.implementation",
+        "algorithms.02_number_systems.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "03_recursive_sequences"
+      ]
+    },
+    {
+      "id": "algorithms.03_recursive_sequences.transfer",
+      "title": "Transfer for Algorithms 03: Recursive Sequences",
+      "notebook": "03_recursive_sequences.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.02_number_systems.implementation",
+        "algorithms.02_number_systems.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "03_recursive_sequences"
+      ]
+    },
+    {
+      "id": "algorithms.04_simulating_randomness.retrieval",
+      "title": "Retrieval for Algorithms 04: Simulating Randomness",
+      "notebook": "04_simulating_randomness.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.03_recursive_sequences.implementation",
+        "algorithms.03_recursive_sequences.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "04_simulating_randomness"
+      ]
+    },
+    {
+      "id": "algorithms.04_simulating_randomness.implementation",
+      "title": "Implementation for Algorithms 04: Simulating Randomness",
+      "notebook": "04_simulating_randomness.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.03_recursive_sequences.implementation",
+        "algorithms.03_recursive_sequences.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "04_simulating_randomness"
+      ]
+    },
+    {
+      "id": "algorithms.04_simulating_randomness.transfer",
+      "title": "Transfer for Algorithms 04: Simulating Randomness",
+      "notebook": "04_simulating_randomness.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.03_recursive_sequences.implementation",
+        "algorithms.03_recursive_sequences.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "04_simulating_randomness"
+      ]
+    },
+    {
+      "id": "algorithms.05_roulette_wheel.retrieval",
+      "title": "Retrieval for Algorithms 05: Roulette Wheel Selection",
+      "notebook": "05_roulette_wheel.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.04_simulating_randomness.implementation",
+        "algorithms.04_simulating_randomness.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "05_roulette_wheel"
+      ]
+    },
+    {
+      "id": "algorithms.05_roulette_wheel.implementation",
+      "title": "Implementation for Algorithms 05: Roulette Wheel Selection",
+      "notebook": "05_roulette_wheel.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.04_simulating_randomness.implementation",
+        "algorithms.04_simulating_randomness.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "05_roulette_wheel"
+      ]
+    },
+    {
+      "id": "algorithms.05_roulette_wheel.transfer",
+      "title": "Transfer for Algorithms 05: Roulette Wheel Selection",
+      "notebook": "05_roulette_wheel.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.04_simulating_randomness.implementation",
+        "algorithms.04_simulating_randomness.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "05_roulette_wheel"
+      ]
+    },
+    {
+      "id": "algorithms.06_cartesian_product.retrieval",
+      "title": "Retrieval for Algorithms 06: Cartesian Product",
+      "notebook": "06_cartesian_product.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.05_roulette_wheel.implementation",
+        "algorithms.05_roulette_wheel.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "06_cartesian_product"
+      ]
+    },
+    {
+      "id": "algorithms.06_cartesian_product.implementation",
+      "title": "Implementation for Algorithms 06: Cartesian Product",
+      "notebook": "06_cartesian_product.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.05_roulette_wheel.implementation",
+        "algorithms.05_roulette_wheel.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "06_cartesian_product"
+      ]
+    },
+    {
+      "id": "algorithms.06_cartesian_product.transfer",
+      "title": "Transfer for Algorithms 06: Cartesian Product",
+      "notebook": "06_cartesian_product.ipynb",
+      "level": 1,
+      "prerequisites": [
+        "algorithms.05_roulette_wheel.implementation",
+        "algorithms.05_roulette_wheel.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "06_cartesian_product"
+      ]
+    },
+    {
+      "id": "algorithms.07_brute_force_crypto.retrieval",
+      "title": "Retrieval for Algorithms 07: Brute Force Cryptography",
+      "notebook": "07_brute_force_crypto.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.06_cartesian_product.implementation",
+        "algorithms.06_cartesian_product.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "07_brute_force_crypto"
+      ]
+    },
+    {
+      "id": "algorithms.07_brute_force_crypto.implementation",
+      "title": "Implementation for Algorithms 07: Brute Force Cryptography",
+      "notebook": "07_brute_force_crypto.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.06_cartesian_product.implementation",
+        "algorithms.06_cartesian_product.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "07_brute_force_crypto"
+      ]
+    },
+    {
+      "id": "algorithms.07_brute_force_crypto.transfer",
+      "title": "Transfer for Algorithms 07: Brute Force Cryptography",
+      "notebook": "07_brute_force_crypto.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.06_cartesian_product.implementation",
+        "algorithms.06_cartesian_product.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "07_brute_force_crypto"
+      ]
+    },
+    {
+      "id": "algorithms.08_backtracking_magic_squares.retrieval",
+      "title": "Retrieval for Algorithms 08: Backtracking and Magic Squares",
+      "notebook": "08_backtracking_magic_squares.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.07_brute_force_crypto.implementation",
+        "algorithms.07_brute_force_crypto.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "08_backtracking_magic_squares"
+      ]
+    },
+    {
+      "id": "algorithms.08_backtracking_magic_squares.implementation",
+      "title": "Implementation for Algorithms 08: Backtracking and Magic Squares",
+      "notebook": "08_backtracking_magic_squares.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.07_brute_force_crypto.implementation",
+        "algorithms.07_brute_force_crypto.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "08_backtracking_magic_squares"
+      ]
+    },
+    {
+      "id": "algorithms.08_backtracking_magic_squares.transfer",
+      "title": "Transfer for Algorithms 08: Backtracking and Magic Squares",
+      "notebook": "08_backtracking_magic_squares.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.07_brute_force_crypto.implementation",
+        "algorithms.07_brute_force_crypto.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "08_backtracking_magic_squares"
+      ]
+    },
+    {
+      "id": "algorithms.09_estimating_roots.retrieval",
+      "title": "Retrieval for Algorithms 09: Estimating Roots",
+      "notebook": "09_estimating_roots.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.08_backtracking_magic_squares.implementation",
+        "algorithms.08_backtracking_magic_squares.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "09_estimating_roots"
+      ]
+    },
+    {
+      "id": "algorithms.09_estimating_roots.implementation",
+      "title": "Implementation for Algorithms 09: Estimating Roots",
+      "notebook": "09_estimating_roots.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.08_backtracking_magic_squares.implementation",
+        "algorithms.08_backtracking_magic_squares.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "09_estimating_roots"
+      ]
+    },
+    {
+      "id": "algorithms.09_estimating_roots.transfer",
+      "title": "Transfer for Algorithms 09: Estimating Roots",
+      "notebook": "09_estimating_roots.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.08_backtracking_magic_squares.implementation",
+        "algorithms.08_backtracking_magic_squares.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "09_estimating_roots"
+      ]
+    },
+    {
+      "id": "algorithms.10_single_variable_gd.retrieval",
+      "title": "Retrieval for Algorithms 10: Single Variable Gradient Descent",
+      "notebook": "10_single_variable_gd.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.09_estimating_roots.implementation",
+        "algorithms.09_estimating_roots.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "10_single_variable_gd"
+      ]
+    },
+    {
+      "id": "algorithms.10_single_variable_gd.implementation",
+      "title": "Implementation for Algorithms 10: Single Variable Gradient Descent",
+      "notebook": "10_single_variable_gd.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.09_estimating_roots.implementation",
+        "algorithms.09_estimating_roots.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "10_single_variable_gd"
+      ]
+    },
+    {
+      "id": "algorithms.10_single_variable_gd.transfer",
+      "title": "Transfer for Algorithms 10: Single Variable Gradient Descent",
+      "notebook": "10_single_variable_gd.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.09_estimating_roots.implementation",
+        "algorithms.09_estimating_roots.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "10_single_variable_gd"
+      ]
+    },
+    {
+      "id": "algorithms.11_multivariable_gd.retrieval",
+      "title": "Retrieval for Algorithms 11: Multivariable Gradient Descent",
+      "notebook": "11_multivariable_gd.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.10_single_variable_gd.implementation",
+        "algorithms.10_single_variable_gd.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "11_multivariable_gd"
+      ]
+    },
+    {
+      "id": "algorithms.11_multivariable_gd.implementation",
+      "title": "Implementation for Algorithms 11: Multivariable Gradient Descent",
+      "notebook": "11_multivariable_gd.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.10_single_variable_gd.implementation",
+        "algorithms.10_single_variable_gd.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "11_multivariable_gd"
+      ]
+    },
+    {
+      "id": "algorithms.11_multivariable_gd.transfer",
+      "title": "Transfer for Algorithms 11: Multivariable Gradient Descent",
+      "notebook": "11_multivariable_gd.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.10_single_variable_gd.implementation",
+        "algorithms.10_single_variable_gd.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "11_multivariable_gd"
+      ]
+    },
+    {
+      "id": "algorithms.12_basic_sorting.retrieval",
+      "title": "Retrieval for Algorithms 12: Basic Sorting",
+      "notebook": "12_basic_sorting.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.11_multivariable_gd.implementation",
+        "algorithms.11_multivariable_gd.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "12_basic_sorting"
+      ]
+    },
+    {
+      "id": "algorithms.12_basic_sorting.implementation",
+      "title": "Implementation for Algorithms 12: Basic Sorting",
+      "notebook": "12_basic_sorting.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.11_multivariable_gd.implementation",
+        "algorithms.11_multivariable_gd.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "12_basic_sorting"
+      ]
+    },
+    {
+      "id": "algorithms.12_basic_sorting.transfer",
+      "title": "Transfer for Algorithms 12: Basic Sorting",
+      "notebook": "12_basic_sorting.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.11_multivariable_gd.implementation",
+        "algorithms.11_multivariable_gd.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "12_basic_sorting"
+      ]
+    },
+    {
+      "id": "algorithms.13_advanced_sorting.retrieval",
+      "title": "Retrieval for Algorithms 13: Advanced Sorting",
+      "notebook": "13_advanced_sorting.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.12_basic_sorting.implementation",
+        "algorithms.12_basic_sorting.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "13_advanced_sorting"
+      ]
+    },
+    {
+      "id": "algorithms.13_advanced_sorting.implementation",
+      "title": "Implementation for Algorithms 13: Advanced Sorting",
+      "notebook": "13_advanced_sorting.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.12_basic_sorting.implementation",
+        "algorithms.12_basic_sorting.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "13_advanced_sorting"
+      ]
+    },
+    {
+      "id": "algorithms.13_advanced_sorting.transfer",
+      "title": "Transfer for Algorithms 13: Advanced Sorting",
+      "notebook": "13_advanced_sorting.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.12_basic_sorting.implementation",
+        "algorithms.12_basic_sorting.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "13_advanced_sorting"
+      ]
+    },
+    {
+      "id": "algorithms.14_basic_matrix_arithmetic.retrieval",
+      "title": "Retrieval for Algorithms 14: Basic Matrix Arithmetic",
+      "notebook": "14_basic_matrix_arithmetic.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.13_advanced_sorting.implementation",
+        "algorithms.13_advanced_sorting.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "14_basic_matrix_arithmetic"
+      ]
+    },
+    {
+      "id": "algorithms.14_basic_matrix_arithmetic.implementation",
+      "title": "Implementation for Algorithms 14: Basic Matrix Arithmetic",
+      "notebook": "14_basic_matrix_arithmetic.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.13_advanced_sorting.implementation",
+        "algorithms.13_advanced_sorting.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "14_basic_matrix_arithmetic"
+      ]
+    },
+    {
+      "id": "algorithms.14_basic_matrix_arithmetic.transfer",
+      "title": "Transfer for Algorithms 14: Basic Matrix Arithmetic",
+      "notebook": "14_basic_matrix_arithmetic.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.13_advanced_sorting.implementation",
+        "algorithms.13_advanced_sorting.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "14_basic_matrix_arithmetic"
+      ]
+    },
+    {
+      "id": "algorithms.15_reduced_row_echelon_form.retrieval",
+      "title": "Retrieval for Algorithms 15: Reduced Row Echelon Form",
+      "notebook": "15_reduced_row_echelon_form.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.14_basic_matrix_arithmetic.implementation",
+        "algorithms.14_basic_matrix_arithmetic.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "15_reduced_row_echelon_form"
+      ]
+    },
+    {
+      "id": "algorithms.15_reduced_row_echelon_form.implementation",
+      "title": "Implementation for Algorithms 15: Reduced Row Echelon Form",
+      "notebook": "15_reduced_row_echelon_form.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.14_basic_matrix_arithmetic.implementation",
+        "algorithms.14_basic_matrix_arithmetic.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "15_reduced_row_echelon_form"
+      ]
+    },
+    {
+      "id": "algorithms.15_reduced_row_echelon_form.transfer",
+      "title": "Transfer for Algorithms 15: Reduced Row Echelon Form",
+      "notebook": "15_reduced_row_echelon_form.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.14_basic_matrix_arithmetic.implementation",
+        "algorithms.14_basic_matrix_arithmetic.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "15_reduced_row_echelon_form"
+      ]
+    },
+    {
+      "id": "algorithms.16_k_means_clustering.retrieval",
+      "title": "Retrieval for Algorithms 16: K-Means Clustering",
+      "notebook": "16_k_means_clustering.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.15_reduced_row_echelon_form.implementation",
+        "algorithms.15_reduced_row_echelon_form.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "16_k_means_clustering"
+      ]
+    },
+    {
+      "id": "algorithms.16_k_means_clustering.implementation",
+      "title": "Implementation for Algorithms 16: K-Means Clustering",
+      "notebook": "16_k_means_clustering.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.15_reduced_row_echelon_form.implementation",
+        "algorithms.15_reduced_row_echelon_form.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "16_k_means_clustering"
+      ]
+    },
+    {
+      "id": "algorithms.16_k_means_clustering.transfer",
+      "title": "Transfer for Algorithms 16: K-Means Clustering",
+      "notebook": "16_k_means_clustering.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.15_reduced_row_echelon_form.implementation",
+        "algorithms.15_reduced_row_echelon_form.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "16_k_means_clustering"
+      ]
+    },
+    {
+      "id": "algorithms.17_tic_tac_toe_connect_four.retrieval",
+      "title": "Retrieval for Algorithms 17: Tic-Tac-Toe and Connect Four",
+      "notebook": "17_tic_tac_toe_connect_four.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.16_k_means_clustering.implementation",
+        "algorithms.16_k_means_clustering.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "17_tic_tac_toe_connect_four"
+      ]
+    },
+    {
+      "id": "algorithms.17_tic_tac_toe_connect_four.implementation",
+      "title": "Implementation for Algorithms 17: Tic-Tac-Toe and Connect Four",
+      "notebook": "17_tic_tac_toe_connect_four.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.16_k_means_clustering.implementation",
+        "algorithms.16_k_means_clustering.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "17_tic_tac_toe_connect_four"
+      ]
+    },
+    {
+      "id": "algorithms.17_tic_tac_toe_connect_four.transfer",
+      "title": "Transfer for Algorithms 17: Tic-Tac-Toe and Connect Four",
+      "notebook": "17_tic_tac_toe_connect_four.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.16_k_means_clustering.implementation",
+        "algorithms.16_k_means_clustering.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "17_tic_tac_toe_connect_four"
+      ]
+    },
+    {
+      "id": "algorithms.18_euler_estimation.retrieval",
+      "title": "Retrieval for Algorithms 18: Euler Estimation",
+      "notebook": "18_euler_estimation.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.17_tic_tac_toe_connect_four.implementation",
+        "algorithms.17_tic_tac_toe_connect_four.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "18_euler_estimation"
+      ]
+    },
+    {
+      "id": "algorithms.18_euler_estimation.implementation",
+      "title": "Implementation for Algorithms 18: Euler Estimation",
+      "notebook": "18_euler_estimation.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.17_tic_tac_toe_connect_four.implementation",
+        "algorithms.17_tic_tac_toe_connect_four.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "18_euler_estimation"
+      ]
+    },
+    {
+      "id": "algorithms.18_euler_estimation.transfer",
+      "title": "Transfer for Algorithms 18: Euler Estimation",
+      "notebook": "18_euler_estimation.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.17_tic_tac_toe_connect_four.implementation",
+        "algorithms.17_tic_tac_toe_connect_four.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "18_euler_estimation"
+      ]
+    },
+    {
+      "id": "algorithms.19_sir_model.retrieval",
+      "title": "Retrieval for Algorithms 19: SIR Model",
+      "notebook": "19_sir_model.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.18_euler_estimation.implementation",
+        "algorithms.18_euler_estimation.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "19_sir_model"
+      ]
+    },
+    {
+      "id": "algorithms.19_sir_model.implementation",
+      "title": "Implementation for Algorithms 19: SIR Model",
+      "notebook": "19_sir_model.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.18_euler_estimation.implementation",
+        "algorithms.18_euler_estimation.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "19_sir_model"
+      ]
+    },
+    {
+      "id": "algorithms.19_sir_model.transfer",
+      "title": "Transfer for Algorithms 19: SIR Model",
+      "notebook": "19_sir_model.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.18_euler_estimation.implementation",
+        "algorithms.18_euler_estimation.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "19_sir_model"
+      ]
+    },
+    {
+      "id": "algorithms.20_hodgkin_huxley.retrieval",
+      "title": "Retrieval for Algorithms 20: Hodgkin-Huxley Model",
+      "notebook": "20_hodgkin_huxley.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.19_sir_model.implementation",
+        "algorithms.19_sir_model.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "20_hodgkin_huxley"
+      ]
+    },
+    {
+      "id": "algorithms.20_hodgkin_huxley.implementation",
+      "title": "Implementation for Algorithms 20: Hodgkin-Huxley Model",
+      "notebook": "20_hodgkin_huxley.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.19_sir_model.implementation",
+        "algorithms.19_sir_model.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "20_hodgkin_huxley"
+      ]
+    },
+    {
+      "id": "algorithms.20_hodgkin_huxley.transfer",
+      "title": "Transfer for Algorithms 20: Hodgkin-Huxley Model",
+      "notebook": "20_hodgkin_huxley.ipynb",
+      "level": 2,
+      "prerequisites": [
+        "algorithms.19_sir_model.implementation",
+        "algorithms.19_sir_model.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "20_hodgkin_huxley"
+      ]
+    },
+    {
+      "id": "algorithms.21_hash_tables.retrieval",
+      "title": "Retrieval for Algorithms 21: Hash Tables",
+      "notebook": "21_hash_tables.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.20_hodgkin_huxley.implementation",
+        "algorithms.20_hodgkin_huxley.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "21_hash_tables"
+      ]
+    },
+    {
+      "id": "algorithms.21_hash_tables.implementation",
+      "title": "Implementation for Algorithms 21: Hash Tables",
+      "notebook": "21_hash_tables.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.20_hodgkin_huxley.implementation",
+        "algorithms.20_hodgkin_huxley.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "21_hash_tables"
+      ]
+    },
+    {
+      "id": "algorithms.21_hash_tables.transfer",
+      "title": "Transfer for Algorithms 21: Hash Tables",
+      "notebook": "21_hash_tables.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.20_hodgkin_huxley.implementation",
+        "algorithms.20_hodgkin_huxley.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "21_hash_tables"
+      ]
+    },
+    {
+      "id": "algorithms.22_simplex_method.retrieval",
+      "title": "Retrieval for Algorithms 22: Simplex Method",
+      "notebook": "22_simplex_method.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.21_hash_tables.implementation",
+        "algorithms.21_hash_tables.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "22_simplex_method"
+      ]
+    },
+    {
+      "id": "algorithms.22_simplex_method.implementation",
+      "title": "Implementation for Algorithms 22: Simplex Method",
+      "notebook": "22_simplex_method.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.21_hash_tables.implementation",
+        "algorithms.21_hash_tables.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "22_simplex_method"
+      ]
+    },
+    {
+      "id": "algorithms.22_simplex_method.transfer",
+      "title": "Transfer for Algorithms 22: Simplex Method",
+      "notebook": "22_simplex_method.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.21_hash_tables.implementation",
+        "algorithms.21_hash_tables.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "22_simplex_method"
+      ]
+    },
+    {
+      "id": "algorithms.23_25_regression_pseudoinverse.retrieval",
+      "title": "Retrieval for Algorithms 23-25: Regression via Pseudoinverse",
+      "notebook": "23-25_regression_pseudoinverse.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.22_simplex_method.implementation",
+        "algorithms.22_simplex_method.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "23_25_regression_pseudoinverse"
+      ]
+    },
+    {
+      "id": "algorithms.23_25_regression_pseudoinverse.implementation",
+      "title": "Implementation for Algorithms 23-25: Regression via Pseudoinverse",
+      "notebook": "23-25_regression_pseudoinverse.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.22_simplex_method.implementation",
+        "algorithms.22_simplex_method.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "23_25_regression_pseudoinverse"
+      ]
+    },
+    {
+      "id": "algorithms.23_25_regression_pseudoinverse.transfer",
+      "title": "Transfer for Algorithms 23-25: Regression via Pseudoinverse",
+      "notebook": "23-25_regression_pseudoinverse.ipynb",
+      "level": 3,
+      "prerequisites": [
+        "algorithms.22_simplex_method.implementation",
+        "algorithms.22_simplex_method.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "23_25_regression_pseudoinverse"
+      ]
+    },
+    {
+      "id": "algorithms.26_overfitting_bias_variance.retrieval",
+      "title": "Retrieval for Algorithms 26: Overfitting, Underfitting, and Bias-Variance",
+      "notebook": "26_overfitting_bias_variance.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.23_25_regression_pseudoinverse.implementation",
+        "algorithms.23_25_regression_pseudoinverse.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "26_overfitting_bias_variance"
+      ]
+    },
+    {
+      "id": "algorithms.26_overfitting_bias_variance.implementation",
+      "title": "Implementation for Algorithms 26: Overfitting, Underfitting, and Bias-Variance",
+      "notebook": "26_overfitting_bias_variance.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.23_25_regression_pseudoinverse.implementation",
+        "algorithms.23_25_regression_pseudoinverse.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "26_overfitting_bias_variance"
+      ]
+    },
+    {
+      "id": "algorithms.26_overfitting_bias_variance.transfer",
+      "title": "Transfer for Algorithms 26: Overfitting, Underfitting, and Bias-Variance",
+      "notebook": "26_overfitting_bias_variance.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.23_25_regression_pseudoinverse.implementation",
+        "algorithms.23_25_regression_pseudoinverse.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "26_overfitting_bias_variance"
+      ]
+    },
+    {
+      "id": "algorithms.27_28_regression_gradient_descent.retrieval",
+      "title": "Retrieval for Algorithms 27-28: Regression via Gradient Descent",
+      "notebook": "27-28_regression_gradient_descent.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.26_overfitting_bias_variance.implementation",
+        "algorithms.26_overfitting_bias_variance.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "27_28_regression_gradient_descent"
+      ]
+    },
+    {
+      "id": "algorithms.27_28_regression_gradient_descent.implementation",
+      "title": "Implementation for Algorithms 27-28: Regression via Gradient Descent",
+      "notebook": "27-28_regression_gradient_descent.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.26_overfitting_bias_variance.implementation",
+        "algorithms.26_overfitting_bias_variance.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "27_28_regression_gradient_descent"
+      ]
+    },
+    {
+      "id": "algorithms.27_28_regression_gradient_descent.transfer",
+      "title": "Transfer for Algorithms 27-28: Regression via Gradient Descent",
+      "notebook": "27-28_regression_gradient_descent.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.26_overfitting_bias_variance.implementation",
+        "algorithms.26_overfitting_bias_variance.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "27_28_regression_gradient_descent"
+      ]
+    },
+    {
+      "id": "algorithms.29_k_nearest_neighbors.retrieval",
+      "title": "Retrieval for Algorithms 29: K-Nearest Neighbors",
+      "notebook": "29_k_nearest_neighbors.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.27_28_regression_gradient_descent.implementation",
+        "algorithms.27_28_regression_gradient_descent.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "29_k_nearest_neighbors"
+      ]
+    },
+    {
+      "id": "algorithms.29_k_nearest_neighbors.implementation",
+      "title": "Implementation for Algorithms 29: K-Nearest Neighbors",
+      "notebook": "29_k_nearest_neighbors.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.27_28_regression_gradient_descent.implementation",
+        "algorithms.27_28_regression_gradient_descent.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "29_k_nearest_neighbors"
+      ]
+    },
+    {
+      "id": "algorithms.29_k_nearest_neighbors.transfer",
+      "title": "Transfer for Algorithms 29: K-Nearest Neighbors",
+      "notebook": "29_k_nearest_neighbors.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.27_28_regression_gradient_descent.implementation",
+        "algorithms.27_28_regression_gradient_descent.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "29_k_nearest_neighbors"
+      ]
+    },
+    {
+      "id": "algorithms.30_naive_bayes.retrieval",
+      "title": "Retrieval for Algorithms 30: Naive Bayes Classification",
+      "notebook": "30_naive_bayes.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.29_k_nearest_neighbors.implementation",
+        "algorithms.29_k_nearest_neighbors.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "30_naive_bayes"
+      ]
+    },
+    {
+      "id": "algorithms.30_naive_bayes.implementation",
+      "title": "Implementation for Algorithms 30: Naive Bayes Classification",
+      "notebook": "30_naive_bayes.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.29_k_nearest_neighbors.implementation",
+        "algorithms.29_k_nearest_neighbors.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "30_naive_bayes"
+      ]
+    },
+    {
+      "id": "algorithms.30_naive_bayes.transfer",
+      "title": "Transfer for Algorithms 30: Naive Bayes Classification",
+      "notebook": "30_naive_bayes.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.29_k_nearest_neighbors.implementation",
+        "algorithms.29_k_nearest_neighbors.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "30_naive_bayes"
+      ]
+    },
+    {
+      "id": "algorithms.31_bfs_dfs.retrieval",
+      "title": "Retrieval for Algorithms 31: Breadth-First and Depth-First Search",
+      "notebook": "31_bfs_dfs.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.30_naive_bayes.implementation",
+        "algorithms.30_naive_bayes.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "31_bfs_dfs"
+      ]
+    },
+    {
+      "id": "algorithms.31_bfs_dfs.implementation",
+      "title": "Implementation for Algorithms 31: Breadth-First and Depth-First Search",
+      "notebook": "31_bfs_dfs.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.30_naive_bayes.implementation",
+        "algorithms.30_naive_bayes.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "31_bfs_dfs"
+      ]
+    },
+    {
+      "id": "algorithms.31_bfs_dfs.transfer",
+      "title": "Transfer for Algorithms 31: Breadth-First and Depth-First Search",
+      "notebook": "31_bfs_dfs.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.30_naive_bayes.implementation",
+        "algorithms.30_naive_bayes.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "31_bfs_dfs"
+      ]
+    },
+    {
+      "id": "algorithms.32_33_shortest_paths_dijkstra.retrieval",
+      "title": "Retrieval for Algorithms 32-33: Shortest Paths and Dijkstra",
+      "notebook": "32-33_shortest_paths_dijkstra.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.31_bfs_dfs.implementation",
+        "algorithms.31_bfs_dfs.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "32_33_shortest_paths_dijkstra"
+      ]
+    },
+    {
+      "id": "algorithms.32_33_shortest_paths_dijkstra.implementation",
+      "title": "Implementation for Algorithms 32-33: Shortest Paths and Dijkstra",
+      "notebook": "32-33_shortest_paths_dijkstra.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.31_bfs_dfs.implementation",
+        "algorithms.31_bfs_dfs.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "32_33_shortest_paths_dijkstra"
+      ]
+    },
+    {
+      "id": "algorithms.32_33_shortest_paths_dijkstra.transfer",
+      "title": "Transfer for Algorithms 32-33: Shortest Paths and Dijkstra",
+      "notebook": "32-33_shortest_paths_dijkstra.ipynb",
+      "level": 4,
+      "prerequisites": [
+        "algorithms.31_bfs_dfs.implementation",
+        "algorithms.31_bfs_dfs.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "32_33_shortest_paths_dijkstra"
+      ]
+    },
+    {
+      "id": "algorithms.34_decision_trees.retrieval",
+      "title": "Retrieval for Algorithms 34: Decision Trees",
+      "notebook": "34_decision_trees.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.32_33_shortest_paths_dijkstra.implementation",
+        "algorithms.32_33_shortest_paths_dijkstra.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "34_decision_trees"
+      ]
+    },
+    {
+      "id": "algorithms.34_decision_trees.implementation",
+      "title": "Implementation for Algorithms 34: Decision Trees",
+      "notebook": "34_decision_trees.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.32_33_shortest_paths_dijkstra.implementation",
+        "algorithms.32_33_shortest_paths_dijkstra.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "34_decision_trees"
+      ]
+    },
+    {
+      "id": "algorithms.34_decision_trees.transfer",
+      "title": "Transfer for Algorithms 34: Decision Trees",
+      "notebook": "34_decision_trees.ipynb",
+      "level": 5,
+      "prerequisites": [
+        "algorithms.32_33_shortest_paths_dijkstra.implementation",
+        "algorithms.32_33_shortest_paths_dijkstra.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "34_decision_trees"
+      ]
+    },
+    {
+      "id": "algorithms.35_36_neural_networks.retrieval",
+      "title": "Retrieval for Algorithms 35-36: Artificial Neural Networks",
+      "notebook": "35-36_neural_networks.ipynb",
+      "level": 6,
+      "prerequisites": [
+        "algorithms.34_decision_trees.implementation",
+        "algorithms.34_decision_trees.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "35_36_neural_networks"
+      ]
+    },
+    {
+      "id": "algorithms.35_36_neural_networks.implementation",
+      "title": "Implementation for Algorithms 35-36: Artificial Neural Networks",
+      "notebook": "35-36_neural_networks.ipynb",
+      "level": 6,
+      "prerequisites": [
+        "algorithms.34_decision_trees.implementation",
+        "algorithms.34_decision_trees.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "35_36_neural_networks"
+      ]
+    },
+    {
+      "id": "algorithms.35_36_neural_networks.transfer",
+      "title": "Transfer for Algorithms 35-36: Artificial Neural Networks",
+      "notebook": "35-36_neural_networks.ipynb",
+      "level": 6,
+      "prerequisites": [
+        "algorithms.34_decision_trees.implementation",
+        "algorithms.34_decision_trees.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "35_36_neural_networks"
+      ]
+    },
+    {
+      "id": "algorithms.37_39_minimax_game_trees.retrieval",
+      "title": "Retrieval for Algorithms 37-39: Minimax and Game Trees",
+      "notebook": "37-39_minimax_game_trees.ipynb",
+      "level": 7,
+      "prerequisites": [
+        "algorithms.35_36_neural_networks.implementation",
+        "algorithms.35_36_neural_networks.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "37_39_minimax_game_trees"
+      ]
+    },
+    {
+      "id": "algorithms.37_39_minimax_game_trees.implementation",
+      "title": "Implementation for Algorithms 37-39: Minimax and Game Trees",
+      "notebook": "37-39_minimax_game_trees.ipynb",
+      "level": 7,
+      "prerequisites": [
+        "algorithms.35_36_neural_networks.implementation",
+        "algorithms.35_36_neural_networks.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "37_39_minimax_game_trees"
+      ]
+    },
+    {
+      "id": "algorithms.37_39_minimax_game_trees.transfer",
+      "title": "Transfer for Algorithms 37-39: Minimax and Game Trees",
+      "notebook": "37-39_minimax_game_trees.ipynb",
+      "level": 7,
+      "prerequisites": [
+        "algorithms.35_36_neural_networks.implementation",
+        "algorithms.35_36_neural_networks.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "37_39_minimax_game_trees"
+      ]
+    },
+    {
+      "id": "algorithms.40_42_neuroevolution.retrieval",
+      "title": "Retrieval for Algorithms 40-42: Neuroevolution and Blondie24",
+      "notebook": "40-42_neuroevolution.ipynb",
+      "level": 7,
+      "prerequisites": [
+        "algorithms.37_39_minimax_game_trees.implementation",
+        "algorithms.37_39_minimax_game_trees.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "40_42_neuroevolution"
+      ]
+    },
+    {
+      "id": "algorithms.40_42_neuroevolution.implementation",
+      "title": "Implementation for Algorithms 40-42: Neuroevolution and Blondie24",
+      "notebook": "40-42_neuroevolution.ipynb",
+      "level": 7,
+      "prerequisites": [
+        "algorithms.37_39_minimax_game_trees.implementation",
+        "algorithms.37_39_minimax_game_trees.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "40_42_neuroevolution"
+      ]
+    },
+    {
+      "id": "algorithms.40_42_neuroevolution.transfer",
+      "title": "Transfer for Algorithms 40-42: Neuroevolution and Blondie24",
+      "notebook": "40-42_neuroevolution.ipynb",
+      "level": 7,
+      "prerequisites": [
+        "algorithms.37_39_minimax_game_trees.implementation",
+        "algorithms.37_39_minimax_game_trees.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "40_42_neuroevolution"
+      ]
+    },
+    {
+      "id": "algorithms.43_convolutional_blondie24.retrieval",
+      "title": "Retrieval for Algorithms 43: Convolutional Blondie24",
+      "notebook": "43_convolutional_blondie24.ipynb",
+      "level": 6,
+      "prerequisites": [
+        "algorithms.40_42_neuroevolution.implementation",
+        "algorithms.40_42_neuroevolution.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "43_convolutional_blondie24"
+      ]
+    },
+    {
+      "id": "algorithms.43_convolutional_blondie24.implementation",
+      "title": "Implementation for Algorithms 43: Convolutional Blondie24",
+      "notebook": "43_convolutional_blondie24.ipynb",
+      "level": 6,
+      "prerequisites": [
+        "algorithms.40_42_neuroevolution.implementation",
+        "algorithms.40_42_neuroevolution.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "43_convolutional_blondie24"
+      ]
+    },
+    {
+      "id": "algorithms.43_convolutional_blondie24.transfer",
+      "title": "Transfer for Algorithms 43: Convolutional Blondie24",
+      "notebook": "43_convolutional_blondie24.ipynb",
+      "level": 6,
+      "prerequisites": [
+        "algorithms.40_42_neuroevolution.implementation",
+        "algorithms.40_42_neuroevolution.transfer"
+      ],
+      "tags": [
+        "algorithms",
+        "43_convolutional_blondie24"
+      ]
     }
   ]
 }

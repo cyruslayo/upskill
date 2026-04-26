@@ -1,4 +1,7 @@
-"""Batch-migrate legacy notebooks into the interactive learning shell.
+"""Legacy batch migration helper for the interactive learning shell.
+
+Use ``generate_clean_notebooks.py`` for all current notebook authoring. This
+module remains as a reference for how the older notebooks were wrapped.
 
 This script does not try to solve every legacy exercise. Instead, it wraps the
 existing lesson content with the shared retrieval-first runtime:
