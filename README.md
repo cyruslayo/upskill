@@ -1,8 +1,8 @@
 # Introduction to Algorithms and Machine Learning
 
-Welcome to the interactive, from-scratch curriculum for algorithms and machine learning! 
+Welcome to the interactive, from-scratch curriculum for algorithms and machine learning.
 
-Based on the highly rigorous pedagogy of **The Math Academy Way** combined with **The Soviet Mathematical Tradition**, this curriculum takes you from basic variables and loops all the way to backpropagation and neuroevolution—all without relying on "black box" external machine learning libraries.
+This repo now ships as a Colab-first learning environment with retrieval practice, spaced review, staged hints, mastery tracking, and instructor solution notebooks. The curriculum still follows the original blend of **The Math Academy Way** and **The Soviet Mathematical Tradition**, but the notebooks now actively support recall, feedback, and progression rather than just exposition.
 
 ## Pedagogical Principles
 
@@ -11,37 +11,28 @@ This curriculum is an interactive mathematical laboratory that synthesizes two h
 1. **The Math Academy Way**: Emphasizes minimizing cognitive load, coding algorithms from scratch, micro-scaffolding, interleaved practice, and spaced repetition to build procedural fluency and talent rapidly.
 2. **The Soviet Mathematical Tradition**: Emphasizes axiomatic rigor, experimental mathematics, guided discovery, and non-routine "Olympiad-level" problem solving to build profound theoretical understanding and algorithmic resilience.
 
-## The 5-Phase Notebook Architecture (Lesson Plan)
+## Notebook Architecture
 
-Every notebook in this curriculum follows a strict 5-Phase progression:
+The notebooks use a retrieval-first structure:
 
-### Phase -1: The Theoretical Proof (Kiselev/Gelfand Rigor)
-*   **Goal**: Guided discovery and axiomatic proof before any code is written.
-*   **Instruction**: Use the provided Markdown or code cell to derive a formula or theorem symbolically using LaTeX or the `sympy` library.
+1. Retrieve prerequisite ideas before the lesson.
+2. Read a short micro-lesson and worked example.
+3. Solve faded examples and independent practice.
+4. Run checks and record confidence.
+5. Reveal hints only after an attempt.
+6. End with cumulative review and the mastery dashboard.
 
-### Phase 0: Math Foundation Practice
-*   **Goal**: Mastering the abstract math mechanics in isolation.   
-*   **Instruction**: Write base Python code for the specific math operation (e.g., dot product, chain rule, algebraic inverse, inequalities) required for the upcoming algorithm, bridging the gap between theory and application.
-
-### Phase 1: Micro-Scaffolded Algorithm Construction (Math Academy)
-*   **Goal**: Building the core algorithm from scratch with minimized cognitive load.
-*   **Instruction**: Complete the step-by-step coding cells without using external ML libraries. Engage with **Interleaved Practice** and **Spaced Repetition** exercises built into the flow.
-
-### Phase 2: Experimental Verification & Visualization (Arnold's Trivium)
-*   **Goal**: Building geometric intuition and exposing algorithmic flaws.
-*   **Instruction**: Execute the verification cells. Compare your from-scratch results against industry standards (like `scikit-learn` or `numpy.linalg`). The notebook will intentionally feed your algorithm a breaking edge-case (pathological data) to force an experimental failure. Use interactive plots (`plotly`, `matplotlib`) to visualize the failure.
-
-### Phase 3: Olympiad Extension & Chalkboard Defense
-*   **Goal**: Non-routine problem solving and oral defense proxy.   
-*   **Instruction**: Complete the Olympiad Task, a 0-scaffolding coding cell where you must invent a workaround for the failure observed in Phase 2. Finally, write a rigorous mathematical defense of your algorithmic choices and time complexity in the Chalkboard Defense Markdown cell.
+The older 5-phase lesson framing still appears inside many notebooks, but it now sits inside this retrieval loop instead of replacing it.
 
 ## Interactive Learning Environment
 
-This curriculum now includes a Colab-first interactive layer:
+This repo now includes a Colab-first interactive layer:
 
 - `learning_tools.py` provides progress tracking, retrieval checks, spaced review scheduling, staged hints, and mastery dashboards.
-- `curriculum/skills.json` defines the first skill registry used by the review system.
-- `mathematics/notebooks/interactive_generator.py` is the source-of-truth generator for the new retrieval-first notebooks and their real instructor solution notebooks.
+- `curriculum/skills.json` defines the skill registry used by the review system.
+- `mathematics/notebooks/interactive_generator.py` is the source-of-truth generator for the Level 0 foundations notebooks and their solution notebooks.
+- `mathematics/notebooks/batch_migrate_interactive.py` wraps the legacy notebooks in the same interactive shell.
+- `curriculum/legacy_solution_bank.py` and `curriculum/complete_legacy_solutions.py` provide the completed instructor solutions for the migrated legacy notebooks.
 - Progress is stored in Google Drive when running in Colab, with a local JSON fallback.
 
 The intended learning loop is:
@@ -55,7 +46,7 @@ The intended learning loop is:
 
 ## Learning Path
 
-The curriculum is structured into a new Level 0 foundations ramp, 43 Main Track lessons, and 7 Math Foundations notebooks. Some main-track lessons are combined into multi-chapter notebooks.
+The curriculum is structured into a new Level 0 foundations ramp, 7 Math Foundations notebooks, and 41 batch-migrated legacy lessons. The combined legacy notebooks remain combined where the original curriculum did that intentionally.
 
 ### Level 0: Foundations Track
 Focus: absolute fundamentals before algebra and algorithms.
@@ -99,10 +90,12 @@ Focus: AI game playing algorithms.
 *   **Notebooks 37-43**: Minimax and Game Trees, Neuroevolution (Fogel's Tic-Tac-Toe & Blondie24), Convolutional Neuroevolution.
 
 ## Project Structure
-- `mathematics/notebooks/`: Contains the 43 student-facing Jupyter Notebooks and 7 Math Foundations Notebooks.
-- `mathematics/solutions/`: Contains the completed, fully-coded versions for reference (Instructor Keys).
+- `mathematics/notebooks/`: Contains the student-facing notebooks, including the new Level 0 foundations and the interactive-v1 migrated legacy lessons.
+- `mathematics/solutions/`: Contains the completed instructor solution notebooks for the same set.
 - `mathematics/textbooks/`: Markdown and PDF textbooks acting as foundational references.
 - `datasets/`: Toy datasets (CSV files) loaded in later regression and classification modules.
+- `curriculum/`: Shared curriculum metadata, the legacy solution bank, and the notebook completion indexes.
+- `tests/`: Validation and audit checks for the learning runtime and notebook generation.
 
 ## Setup & Installation
 1. Install Python 3.10+
@@ -114,7 +107,7 @@ Focus: AI game playing algorithms.
    ```bash
    jupyter notebook
    ```
-4. Open the `mathematics/notebooks/` directory and start with `01_introductory_coding.ipynb`! Note that every notebook includes a Google Colab setup cell, so you can easily run them in the cloud.
+4. Open the `mathematics/notebooks/` directory and start with `math_00_diagnostic.ipynb`. From there, the dashboard will route you to the right starting point. Every notebook includes a Google Colab setup cell, so you can run the curriculum in the cloud.
 
 ## Regeneration and Validation
 
