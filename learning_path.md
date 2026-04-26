@@ -2,6 +2,20 @@
 
 This learning path maps the chapters from the core text to Jupyter Notebooks, incorporating spaced repetition, interleaved practice, and targeted math foundations.
 
+## Level 0: Foundations Track
+Focus: absolute fundamentals, retrieval practice, and placement before the current algebra/algorithm path.
+
+*   **Diagnostic: Placement and Recall** — identifies whether the learner should begin with Python arithmetic, pre-algebra, functions, or Math 01.
+*   **Math 00A: Python Arithmetic and Variables** — arithmetic expressions, variables, and tiny functions.
+*   **Math 00B: Pre-Algebra Foundations** — order of operations, negatives, fractions, and proportions.
+*   **Math 00C: Functions, Tables, and Graphs** — input-output rules, tables, graphs, and slope intuition.
+
+Each Level 0 notebook uses the shared `learning_tools.py` runtime for retrieval gates, staged hints, active checks, spaced review, confidence reporting, and mastery dashboards.
+
+The legacy math and algorithm notebooks have also been batch-migrated into the same interactive shell. Their original exercises remain intact, while each notebook now starts with a retrieval gate and ends with a mastery dashboard.
+
+---
+
 ## Math Foundations Track
 Focus: Learning the underlying mathematics from start to finish, built from scratch using the Math Academy pedagogical principles.
 

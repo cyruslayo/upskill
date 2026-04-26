@@ -1,1 +1,5 @@
 mathematics/textbooks/**
+.test_tmp/
+upskill_math_progress.json
+__pycache__/
+**/__pycache__/

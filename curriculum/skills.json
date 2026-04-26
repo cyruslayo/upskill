@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "levels": [
+    {
+      "level": 0,
+      "title": "Foundations",
+      "description": "Pre-algebra, Python arithmetic, functions, and graphs."
+    },
+    {
+      "level": 1,
+      "title": "Algebra and Computational Thinking",
+      "description": "Linear equations, number systems, coding primitives, and basic proofs."
+    },
+    {
+      "level": 2,
+      "title": "Calculus and Optimization",
+      "description": "Derivatives, chain rule, extrema, roots, gradient descent, and differential equations."
+    },
+    {
+      "level": 3,
+      "title": "Linear Algebra and Data Geometry",
+      "description": "Vectors, matrices, transformations, elimination, and pseudoinverse methods."
+    },
+    {
+      "level": 4,
+      "title": "Algorithms",
+      "description": "Search, sorting, recursion, graphs, hash tables, and complexity."
+    },
+    {
+      "level": 5,
+      "title": "Classical Machine Learning",
+      "description": "Clustering, regression, validation, KNN, Naive Bayes, and decision trees."
+    },
+    {
+      "level": 6,
+      "title": "Neural Networks",
+      "description": "Logistic units, forward propagation, backpropagation, and convolution basics."
+    },
+    {
+      "level": 7,
+      "title": "Game AI and Capstones",
+      "description": "Minimax, self-play, neuroevolution, and open-ended expert projects."
+    }
+  ],
+  "skills": [
+    {
+      "id": "py.arithmetic.expressions",
+      "title": "Evaluate Python arithmetic expressions",
+      "notebook": "math_00_python_arithmetic.ipynb",
+      "level": 0,
+      "prerequisites": [],
+      "tags": ["python", "arithmetic"]
+    },
+    {
+      "id": "py.variables.functions",
+      "title": "Use variables and simple functions",
+      "notebook": "math_00_python_arithmetic.ipynb",
+      "level": 0,
+      "prerequisites": ["py.arithmetic.expressions"],
+      "tags": ["python", "functions"]
+    },
+    {
+      "id": "math.pre_algebra.order_operations",
+      "title": "Apply order of operations",
+      "notebook": "math_00_pre_algebra.ipynb",
+      "level": 0,
+      "prerequisites": ["py.arithmetic.expressions"],
+      "tags": ["pre-algebra"]
+    },
+    {
+      "id": "math.pre_algebra.fractions",
+      "title": "Compute with fractions and proportions",
+      "notebook": "math_00_pre_algebra.ipynb",
+      "level": 0,
+      "prerequisites": ["math.pre_algebra.order_operations"],
+      "tags": ["pre-algebra", "fractions"]
+    },
+    {
+      "id": "math.functions.input_output",
+      "title": "Read functions as input-output machines",
+      "notebook": "math_00_functions_and_graphs.ipynb",
+      "level": 0,
+      "prerequisites": ["py.variables.functions"],
+      "tags": ["functions", "graphs"]
+    },
+    {
+      "id": "math.functions.graph_tables",
+      "title": "Connect tables, formulas, and graphs",
+      "notebook": "math_00_functions_and_graphs.ipynb",
+      "level": 0,
+      "prerequisites": ["math.functions.input_output"],
+      "tags": ["functions", "graphs"]
+    },
+    {
+      "id": "math.linear_equations.solve_ax_b_c",
+      "title": "Solve ax + b = c",
+      "notebook": "math_01_algebra_linear_equations.ipynb",
+      "level": 1,
+      "prerequisites": ["math.pre_algebra.fractions", "py.variables.functions"],
+      "tags": ["algebra"]
+    }
+  ]
+}

@@ -1,0 +1,893 @@
+{
+  "schema_version": 1,
+  "description": "Legacy notebooks migrated into the interactive-v1 shell.",
+  "notebooks": [
+    {
+      "id": "math_01_algebra_linear_equations",
+      "filename": "math_01_algebra_linear_equations.ipynb",
+      "title": "Math 01: Algebra \u2014 Linear Equations",
+      "level": 1,
+      "objectives": [
+        "Define what a linear equation is and identify its components",
+        "Solve single-variable linear equations using inverse operations",
+        "Recognise the three solution cases (unique, none, infinitely many)",
+        "Translate algebraic solutions into Python code from scratch",
+        "Verify solutions computationally and handle pathological edge cases"
+      ],
+      "prerequisites": [
+        "Basic Python (variables",
+        "functions",
+        "if/else)"
+      ],
+      "skills_taught": [
+        "lesson.math_01_algebra_linear_equations"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "math_02_calculus_derivatives.ipynb"
+    },
+    {
+      "id": "math_02_calculus_derivatives",
+      "filename": "math_02_calculus_derivatives.ipynb",
+      "title": "Math 02: Calculus \u2014 Derivatives & the Power Rule",
+      "level": 1,
+      "objectives": [
+        "Understand the derivative as the slope of a function at a point",
+        "Compute derivatives via the difference quotient (limit definition)",
+        "Apply the Power Rule to differentiate polynomials efficiently",
+        "Implement numerical and symbolic differentiation in Python"
+      ],
+      "prerequisites": [
+        "Math 01 (Algebra)",
+        "basic function concepts"
+      ],
+      "skills_taught": [
+        "lesson.math_02_calculus_derivatives"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "math_03_calculus_chain_rule.ipynb"
+    },
+    {
+      "id": "math_03_calculus_chain_rule",
+      "filename": "math_03_calculus_chain_rule.ipynb",
+      "title": "Math 03: Calculus \u2014 The Chain Rule",
+      "level": 1,
+      "objectives": [
+        "Differentiate composite functions using the Chain Rule",
+        "Decompose nested functions into layers for differentiation",
+        "Implement chain-rule differentiation computationally"
+      ],
+      "prerequisites": [
+        "Math 02 (Derivatives & Power Rule)"
+      ],
+      "skills_taught": [
+        "lesson.math_03_calculus_chain_rule"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "math_04_calculus_local_extrema.ipynb"
+    },
+    {
+      "id": "math_04_calculus_local_extrema",
+      "filename": "math_04_calculus_local_extrema.ipynb",
+      "title": "Math 04: Calculus \u2014 Local Extrema",
+      "level": 1,
+      "objectives": [
+        "Use derivatives to find a function's local peaks (maxima) and valleys (minima)",
+        "Identify critical points where the derivative is 0 or undefined",
+        "Apply the First Derivative Test to classify critical points",
+        "Implement an extrema-finding algorithm computationally"
+      ],
+      "prerequisites": [
+        "Math 02 (Derivatives)"
+      ],
+      "skills_taught": [
+        "lesson.math_04_calculus_local_extrema"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "math_05_linear_algebra_vectors.ipynb"
+    },
+    {
+      "id": "math_05_linear_algebra_vectors",
+      "filename": "math_05_linear_algebra_vectors.ipynb",
+      "title": "Math 05: Linear Algebra \u2014 Vectors",
+      "level": 1,
+      "objectives": [
+        "Represent points and displacements in N-dimensional space",
+        "Perform vector addition and scalar multiplication",
+        "Compute the dot product and understand its geometric meaning",
+        "Compute the cross product (for 3D vectors)",
+        "Implement vector math computationally from scratch"
+      ],
+      "prerequisites": [
+        "Math 01 (Algebra)"
+      ],
+      "skills_taught": [
+        "lesson.math_05_linear_algebra_vectors"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "math_06_linear_algebra_matrices.ipynb"
+    },
+    {
+      "id": "math_06_linear_algebra_matrices",
+      "filename": "math_06_linear_algebra_matrices.ipynb",
+      "title": "Math 06: Linear Algebra \u2014 Matrices",
+      "level": 1,
+      "objectives": [
+        "Define matrices and their dimensions",
+        "Multiply a matrix by a vector to perform a linear transformation",
+        "Multiply two matrices together",
+        "Understand the geometric intuition behind matrices",
+        "Implement matrix multiplication computationally from scratch"
+      ],
+      "prerequisites": [
+        "Math 05 (Vectors)"
+      ],
+      "skills_taught": [
+        "lesson.math_06_linear_algebra_matrices"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "math_07_calculus_differential_equations.ipynb"
+    },
+    {
+      "id": "math_07_calculus_differential_equations",
+      "filename": "math_07_calculus_differential_equations.ipynb",
+      "title": "Math 07: Calculus \u2014 Differential Equations",
+      "level": 1,
+      "objectives": [
+        "Solve separable differential equations analytically",
+        "Visualize differential equations using Slope Fields",
+        "Implement Euler's Method to approximate solutions computationally"
+      ],
+      "prerequisites": [
+        "Math 02 (Derivatives)"
+      ],
+      "skills_taught": [
+        "lesson.math_07_calculus_differential_equations"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "01_introductory_coding.ipynb"
+    },
+    {
+      "id": "01_introductory_coding",
+      "filename": "01_introductory_coding.ipynb",
+      "title": "Algorithms 01: Introductory Coding",
+      "level": 1,
+      "objectives": [
+        "Review basic control flow (loops, if/else) without using external libraries",
+        "Solve common algorithmic primitives from scratch",
+        "Learn basic testing methodologies",
+        "Develop strong debugging habits using print statements"
+      ],
+      "prerequisites": [
+        "Basic programming familiarity"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_01_introductory_coding"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "02_number_systems.ipynb"
+    },
+    {
+      "id": "02_number_systems",
+      "filename": "02_number_systems.ipynb",
+      "title": "Algorithms 02: Number Systems",
+      "level": 1,
+      "objectives": [
+        "Understand base-2 (binary) and base-16 (hexadecimal) number systems",
+        "Convert numbers from base-b to decimal using positional coefficients",
+        "Convert decimal numbers to base-b using repeated division",
+        "Write modular conversion functions from scratch"
+      ],
+      "prerequisites": [
+        "Algorithms 01"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_02_number_systems"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "03_recursive_sequences.ipynb"
+    },
+    {
+      "id": "03_recursive_sequences",
+      "filename": "03_recursive_sequences.ipynb",
+      "title": "Algorithms 03: Recursive Sequences",
+      "level": 1,
+      "objectives": [
+        "Understand what a recursive sequence is",
+        "Compute sequence terms using iterative loops (arrays/variables)",
+        "Compute sequence terms using function recursion",
+        "Understand the time and space complexity tradeoffs between iteration and recursion"
+      ],
+      "prerequisites": [
+        "Algorithms 02"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_03_recursive_sequences"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "04_simulating_randomness.ipynb"
+    },
+    {
+      "id": "04_simulating_randomness",
+      "filename": "04_simulating_randomness.ipynb",
+      "title": "Algorithms 04: Simulating Randomness",
+      "level": 1,
+      "objectives": [
+        "Understand Monte Carlo simulation",
+        "Simulate events using random number generators",
+        "Estimate complex probabilities computationally",
+        "Verify results using high-level sanity checks (distributions)"
+      ],
+      "prerequisites": [
+        "Algorithms 01"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_04_simulating_randomness"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "05_roulette_wheel.ipynb"
+    },
+    {
+      "id": "05_roulette_wheel",
+      "filename": "05_roulette_wheel.ipynb",
+      "title": "Algorithms 05: Roulette Wheel Selection",
+      "level": 1,
+      "objectives": [
+        "Sample from discrete, non-uniform probability distributions",
+        "Compute a cumulative distribution function computationally",
+        "Apply Roulette Wheel Selection to pick an index"
+      ],
+      "prerequisites": [
+        "Algorithms 04"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_05_roulette_wheel"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "06_cartesian_product.ipynb"
+    },
+    {
+      "id": "06_cartesian_product",
+      "filename": "06_cartesian_product.ipynb",
+      "title": "Algorithms 06: Cartesian Product",
+      "level": 1,
+      "objectives": [
+        "Understand the Cartesian Product of multiple arrays",
+        "Understand the danger of array-referencing vs array-copying in Python",
+        "Implement an iterative Cartesian product generator from scratch"
+      ],
+      "prerequisites": [
+        "Algorithms 01"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_06_cartesian_product"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "07_brute_force_crypto.ipynb"
+    },
+    {
+      "id": "07_brute_force_crypto",
+      "filename": "07_brute_force_crypto.ipynb",
+      "title": "Algorithms 07: Brute Force Cryptography",
+      "level": 1,
+      "objectives": [
+        "Understand encoding and decoding functions",
+        "Use brute-force search to explore a parameter space",
+        "Break a simple linear encryption scheme computationally"
+      ],
+      "prerequisites": [
+        "Algorithms 01"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_07_brute_force_crypto"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "08_backtracking_magic_squares.ipynb"
+    },
+    {
+      "id": "08_backtracking_magic_squares",
+      "filename": "08_backtracking_magic_squares.ipynb",
+      "title": "Algorithms 08: Backtracking & Magic Squares",
+      "level": 1,
+      "objectives": [
+        "Understand how backtracking optimizes brute-force search",
+        "Use a `continue` statement to prune hopeless search branches",
+        "Solve the $3 \\times 3$ Magic Square computationally"
+      ],
+      "prerequisites": [
+        "Algorithms 07"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_08_backtracking_magic_squares"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "09_estimating_roots.ipynb"
+    },
+    {
+      "id": "09_estimating_roots",
+      "filename": "09_estimating_roots.ipynb",
+      "title": "Algorithms 09: Estimating Roots",
+      "level": 2,
+      "objectives": [
+        "Estimate roots of functions using Bisection Search",
+        "Estimate roots of functions using the Newton-Raphson Method",
+        "Compare the convergence rates of both algorithms"
+      ],
+      "prerequisites": [
+        "Math 02 (Derivatives)"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_09_estimating_roots"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "10_single_variable_gd.ipynb"
+    },
+    {
+      "id": "10_single_variable_gd",
+      "filename": "10_single_variable_gd.ipynb",
+      "title": "Algorithms 10: Single Variable Gradient Descent",
+      "level": 2,
+      "objectives": [
+        "Understand the geometric intuition of Gradient Descent",
+        "Implement the gradient descent update rule computationally",
+        "Tune the learning rate $\\alpha$ to prevent divergence",
+        "Handle Local Minima by testing multiple initial guesses"
+      ],
+      "prerequisites": [
+        "Math 02 (Derivatives)"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_10_single_variable_gd"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "11_multivariable_gd.ipynb"
+    },
+    {
+      "id": "11_multivariable_gd",
+      "filename": "11_multivariable_gd.ipynb",
+      "title": "Algorithms 11: Multivariable Gradient Descent",
+      "level": 2,
+      "objectives": [
+        "Understand gradients as vectors of partial derivatives",
+        "Apply the multivariable update rule computationally",
+        "Optimize functions of two or more variables"
+      ],
+      "prerequisites": [
+        "Algorithms 10"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_11_multivariable_gd"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "12_basic_sorting.ipynb"
+    },
+    {
+      "id": "12_basic_sorting",
+      "filename": "12_basic_sorting.ipynb",
+      "title": "Algorithms 12: Basic Sorting",
+      "level": 4,
+      "objectives": [
+        "Implement Selection Sort, Bubble Sort, and Insertion Sort from scratch",
+        "Implement Counting Sort and understand its memory tradeoffs",
+        "Analyze $O(n^2)$ time complexity"
+      ],
+      "prerequisites": [
+        "Algorithms 01"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_12_basic_sorting"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "13_advanced_sorting.ipynb"
+    },
+    {
+      "id": "13_advanced_sorting",
+      "filename": "13_advanced_sorting.ipynb",
+      "title": "Algorithms 13: Advanced Sorting",
+      "level": 4,
+      "objectives": [
+        "Understand \"Divide and Conquer\" algorithms",
+        "Implement Merge Sort recursively",
+        "Implement Quicksort recursively",
+        "Understand $O(n \\log n)$ time complexity"
+      ],
+      "prerequisites": [
+        "Algorithms 12"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_13_advanced_sorting"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "14_basic_matrix_arithmetic.ipynb"
+    },
+    {
+      "id": "14_basic_matrix_arithmetic",
+      "filename": "14_basic_matrix_arithmetic.ipynb",
+      "title": "Algorithms 14: Basic Matrix Arithmetic",
+      "level": 3,
+      "objectives": [
+        "Design a `Matrix` class from scratch using 2D arrays",
+        "Implement matrix addition, subtraction, scalar multiplication, and transpose",
+        "Implement matrix multiplication using dot products",
+        "Compute matrix determinants recursively via cofactor expansion"
+      ],
+      "prerequisites": [
+        "Linear Algebra"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_14_basic_matrix_arithmetic"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "15_reduced_row_echelon_form.ipynb"
+    },
+    {
+      "id": "15_reduced_row_echelon_form",
+      "filename": "15_reduced_row_echelon_form.ipynb",
+      "title": "Algorithms 15: Reduced Row Echelon Form",
+      "level": 3,
+      "objectives": [
+        "Implement the RREF algorithm iteratively using helper functions",
+        "Compute the Inverse of a matrix much faster using augmented RREF",
+        "Compute Determinants in $O(N^3)$ time instead of $O(N!)$"
+      ],
+      "prerequisites": [
+        "Algorithms 14"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_15_reduced_row_echelon_form"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "16_k_means_clustering.ipynb"
+    },
+    {
+      "id": "16_k_means_clustering",
+      "filename": "16_k_means_clustering.ipynb",
+      "title": "Algorithms 16: K-Means Clustering",
+      "level": 5,
+      "objectives": [
+        "Understand unsupervised learning and clustering",
+        "Implement the iterative K-Means algorithm",
+        "Use Euclidean distance to assign data points to clusters",
+        "Use the Elbow Method to determine the optimal number of clusters $K$"
+      ],
+      "prerequisites": [
+        "Algorithms 11"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_16_k_means_clustering"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "17_tic_tac_toe_connect_four.ipynb"
+    },
+    {
+      "id": "17_tic_tac_toe_connect_four",
+      "filename": "17_tic_tac_toe_connect_four.ipynb",
+      "title": "Algorithms 17: Tic-Tac-Toe",
+      "level": 4,
+      "objectives": [
+        "Use Object-Oriented design to encapsulate game state",
+        "Enforce rules via private methods and move validation",
+        "Create Random and Manual Player classes that interact with the Game",
+        "Develop logging and debugging tools for game history"
+      ],
+      "prerequisites": [
+        "Algorithms 01"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_17_tic_tac_toe_connect_four"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "18_euler_estimation.ipynb"
+    },
+    {
+      "id": "18_euler_estimation",
+      "filename": "18_euler_estimation.ipynb",
+      "title": "Algorithms 18: Euler Estimation",
+      "level": 2,
+      "objectives": [
+        "Solve ordinary differential equations (ODEs) computationally using Euler's Method",
+        "Generalize 1D Euler Estimation to Multivariable Systems of ODEs",
+        "Use Matplotlib to visualize the trajectories of state variables"
+      ],
+      "prerequisites": [
+        "Calculus (Derivatives)"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_18_euler_estimation"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "19_sir_model.ipynb"
+    },
+    {
+      "id": "19_sir_model",
+      "filename": "19_sir_model.ipynb",
+      "title": "Algorithms 19: SIR Model For the Spread of Disease",
+      "level": 2,
+      "objectives": [
+        "Formulate the SIR (Susceptible, Infected, Recovered) ODE equations",
+        "Understand population dynamics and transmission rates",
+        "Simulate an epidemic outbreak using Multivariable Euler Estimation"
+      ],
+      "prerequisites": [
+        "Algorithms 18"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_19_sir_model"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "20_hodgkin_huxley.ipynb"
+    },
+    {
+      "id": "20_hodgkin_huxley",
+      "filename": "20_hodgkin_huxley.ipynb",
+      "title": "Algorithms 20: Hodgkin-Huxley Model of Action Potentials",
+      "level": 2,
+      "objectives": [
+        "Translate massive systems of biological ODEs into Python code",
+        "Handle time-dependent stimulus functions $s(t)$",
+        "Simulate a neuron firing an Action Potential (Spike)"
+      ],
+      "prerequisites": [
+        "Algorithms 18"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_20_hodgkin_huxley"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "21_hash_tables.ipynb"
+    },
+    {
+      "id": "21_hash_tables",
+      "filename": "21_hash_tables.ipynb",
+      "title": "Algorithms 21: Hash Tables",
+      "level": 4,
+      "objectives": [
+        "Understand how Dictionaries/Maps are implemented under the hood",
+        "Design a Hash Function",
+        "Implement a Hash Table with Buckets to handle collisions"
+      ],
+      "prerequisites": [
+        "Algorithms 01"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_21_hash_tables"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "22_simplex_method.ipynb"
+    },
+    {
+      "id": "22_simplex_method",
+      "filename": "22_simplex_method.ipynb",
+      "title": "Algorithms 22: Simplex Method",
+      "level": 3,
+      "objectives": [
+        "Understand Linear Programming and Optimization under Constraints",
+        "Introduce Slack Variables to convert inequalities to equations",
+        "Implement the Simplex Tableau pivoting algorithm"
+      ],
+      "prerequisites": [
+        "Algorithms 15"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_22_simplex_method"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "23-25_regression_pseudoinverse.ipynb"
+    },
+    {
+      "id": "23-25_regression_pseudoinverse",
+      "filename": "23-25_regression_pseudoinverse.ipynb",
+      "title": "Algorithms 23-25: Regression via Pseudoinverse",
+      "level": 3,
+      "objectives": [
+        "Formulate curve-fitting as an overdetermined system of linear equations $y = Xp$",
+        "Use the Pseudoinverse $(X^T X)^{-1} X^T$ to find the optimal least-squares parameters $p$",
+        "Extend the pseudoinverse to fit Polynomial, Multiple Linear, Power, Exponential, and Logistic models via algebraic transformation"
+      ],
+      "prerequisites": [
+        "Algorithms 15 (RREF/Matrix Inversion)"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_23_25_regression_pseudoinverse"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "26_overfitting_bias_variance.ipynb"
+    },
+    {
+      "id": "26_overfitting_bias_variance",
+      "filename": "26_overfitting_bias_variance.ipynb",
+      "title": "Algorithms 26: Overfitting, Underfitting, and Bias-Variance Tradeoff",
+      "level": 5,
+      "objectives": [
+        "Understand why fitting a model to 100% accuracy on training data is dangerous",
+        "Diagnose High Bias (Underfitting) vs High Variance (Overfitting)",
+        "Implement Leave-One-Out Cross Validation to measure true generalization accuracy"
+      ],
+      "prerequisites": [
+        "Algorithms 23-25"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_26_overfitting_bias_variance"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "27-28_regression_gradient_descent.ipynb"
+    },
+    {
+      "id": "27-28_regression_gradient_descent",
+      "filename": "27-28_regression_gradient_descent.ipynb",
+      "title": "Algorithms 27-28: Regression via Gradient Descent & Interaction Terms",
+      "level": 5,
+      "objectives": [
+        "Formulate Logistic and Non-linear Regression without using the Pseudoinverse transform",
+        "Define a loss function (Residual Sum of Squares)",
+        "Compute partial derivatives to update weights using Gradient Descent",
+        "Use Interaction Terms to model complex multi-variable relationships"
+      ],
+      "prerequisites": [
+        "Algorithms 26"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_27_28_regression_gradient_descent"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "29_k_nearest_neighbors.ipynb"
+    },
+    {
+      "id": "29_k_nearest_neighbors",
+      "filename": "29_k_nearest_neighbors.ipynb",
+      "title": "Algorithms 29: K-Nearest Neighbors",
+      "level": 5,
+      "objectives": [
+        "Differentiate Regression from Classification",
+        "Implement the K-Nearest Neighbors (KNN) classification algorithm",
+        "Use Euclidean Distance to measure point similarity",
+        "Use Leave-One-Out Cross Validation to choose the optimal hyperparameter $K$"
+      ],
+      "prerequisites": [
+        "Algorithms 26"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_29_k_nearest_neighbors"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "30_naive_bayes.ipynb"
+    },
+    {
+      "id": "30_naive_bayes",
+      "filename": "30_naive_bayes.ipynb",
+      "title": "Algorithms 30: Naive Bayes Classification",
+      "level": 5,
+      "objectives": [
+        "Formulate classification using Bayes' Theorem",
+        "Understand the \"Naive\" independence assumption",
+        "Implement a probabilisitic classifier that calculates $P(Class | Data)$"
+      ],
+      "prerequisites": [
+        "Algorithms 29"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_30_naive_bayes"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "31_bfs_dfs.ipynb"
+    },
+    {
+      "id": "31_bfs_dfs",
+      "filename": "31_bfs_dfs.ipynb",
+      "title": "Algorithms 31: Breadth-First and Depth-First Search",
+      "level": 4,
+      "objectives": [
+        "Represent a Graph using Adjacency Lists and Adjacency Matrices",
+        "Implement Breadth-First Search (BFS) using a Queue",
+        "Implement Depth-First Search (DFS) using a Stack or Recursion",
+        "Differentiate the use-cases for BFS vs DFS"
+      ],
+      "prerequisites": [
+        "Algorithms 15"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_31_bfs_dfs"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "32-33_shortest_paths_dijkstra.ipynb"
+    },
+    {
+      "id": "32-33_shortest_paths_dijkstra",
+      "filename": "32-33_shortest_paths_dijkstra.ipynb",
+      "title": "Algorithms 32-33: Shortest Paths & Dijkstra's Algorithm",
+      "level": 4,
+      "objectives": [
+        "Define Weighted Graphs",
+        "Use a Priority Queue (Min-Heap)",
+        "Implement Dijkstra's Algorithm to find the shortest path from a start node to all other nodes",
+        "Track the actual path taken using a `previous` map"
+      ],
+      "prerequisites": [
+        "Algorithms 31"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_32_33_shortest_paths_dijkstra"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "34_decision_trees.ipynb"
+    },
+    {
+      "id": "34_decision_trees",
+      "filename": "34_decision_trees.ipynb",
+      "title": "Algorithms 34: Decision Trees",
+      "level": 5,
+      "objectives": [
+        "Formulate rules-based classification as a Tree structure",
+        "Compute Shannon Entropy to measure dataset impurity",
+        "Implement the recursive ID3 / CART algorithm to automatically grow a Decision Tree"
+      ],
+      "prerequisites": [
+        "Algorithms 29"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_34_decision_trees"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "35-36_neural_networks.ipynb"
+    },
+    {
+      "id": "35-36_neural_networks",
+      "filename": "35-36_neural_networks.ipynb",
+      "title": "Algorithms 35-36: Artificial Neural Networks",
+      "level": 6,
+      "objectives": [
+        "Design a Multi-Layer Perceptron (MLP)",
+        "Implement Forward Propagation using Matrix multiplications",
+        "Implement Backpropagation to calculate gradients across hidden layers",
+        "Train a neural network to solve the non-linear XOR problem"
+      ],
+      "prerequisites": [
+        "Algorithms 27-28"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_35_36_neural_networks"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "37-39_minimax_game_trees.ipynb"
+    },
+    {
+      "id": "37-39_minimax_game_trees",
+      "filename": "37-39_minimax_game_trees.ipynb",
+      "title": "Algorithms 37-39: Minimax & Game Trees",
+      "level": 7,
+      "objectives": [
+        "Formulate 2-player zero-sum games as a state-space Tree",
+        "Implement the Minimax Algorithm to guarantee optimal play",
+        "Integrate Minimax into your Tic-Tac-Toe architecture from Batch 3"
+      ],
+      "prerequisites": [
+        "Algorithms 17",
+        "Algorithms 31"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_37_39_minimax_game_trees"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "40-42_neuroevolution.ipynb"
+    },
+    {
+      "id": "40-42_neuroevolution",
+      "filename": "40-42_neuroevolution.ipynb",
+      "title": "Algorithms 40-42: Neuroevolution & Blondie24",
+      "level": 7,
+      "objectives": [
+        "Combine Neural Networks and Evolutionary Algorithms",
+        "Replicate Fogel & Chellapilla's *Blondie24* checkers player",
+        "Train networks through pure self-play tournaments without datasets or backpropagation"
+      ],
+      "prerequisites": [
+        "Algorithms 35-36"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_40_42_neuroevolution"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": "43_convolutional_blondie24.ipynb"
+    },
+    {
+      "id": "43_convolutional_blondie24",
+      "filename": "43_convolutional_blondie24.ipynb",
+      "title": "Algorithms 43: Convolutional Blondie24",
+      "level": 6,
+      "objectives": [
+        "Understand the spatial limits of standard MLPs",
+        "Design a Convolutional Neural Network (CNN) architecture",
+        "Re-implement the Convolutional layer of Blondie24"
+      ],
+      "prerequisites": [
+        "Algorithms 40-42"
+      ],
+      "skills_taught": [
+        "lesson.algorithms_43_convolutional_blondie24"
+      ],
+      "skills_practiced": [
+        "py.arithmetic.expressions"
+      ],
+      "next_notebook": null
+    }
+  ]
+}

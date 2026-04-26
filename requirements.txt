@@ -3,6 +3,7 @@ notebook
 nbformat
 matplotlib
 ipywidgets
+jupyterquiz
 pandas
 scikit-learn
 numpy

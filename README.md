@@ -35,9 +35,34 @@ Every notebook in this curriculum follows a strict 5-Phase progression:
 *   **Goal**: Non-routine problem solving and oral defense proxy.   
 *   **Instruction**: Complete the Olympiad Task, a 0-scaffolding coding cell where you must invent a workaround for the failure observed in Phase 2. Finally, write a rigorous mathematical defense of your algorithmic choices and time complexity in the Chalkboard Defense Markdown cell.
 
+## Interactive Learning Environment
+
+This curriculum now includes a Colab-first interactive layer:
+
+- `learning_tools.py` provides progress tracking, retrieval checks, spaced review scheduling, staged hints, and mastery dashboards.
+- `curriculum/skills.json` defines the first skill registry used by the review system.
+- `mathematics/notebooks/interactive_generator.py` is the source-of-truth generator for the new retrieval-first notebooks and their real instructor solution notebooks.
+- Progress is stored in Google Drive when running in Colab, with a local JSON fallback.
+
+The intended learning loop is:
+
+1. Retrieve prerequisite knowledge before reading.
+2. Study a short micro-lesson and worked example.
+3. Complete faded examples and independent practice.
+4. Run active checks and record confidence.
+5. Use staged hints only after a real attempt.
+6. End with cumulative review and the mastery dashboard.
+
 ## Learning Path
 
-The curriculum is structured into 43 Main Track Notebooks and 7 Math Foundations Notebooks. 
+The curriculum is structured into a new Level 0 foundations ramp, 43 Main Track lessons, and 7 Math Foundations notebooks. Some main-track lessons are combined into multi-chapter notebooks.
+
+### Level 0: Foundations Track
+Focus: absolute fundamentals before algebra and algorithms.
+*   **Diagnostic**: Placement and prerequisite recall.
+*   **Math 00A**: Python Arithmetic and Variables.
+*   **Math 00B**: Pre-Algebra Foundations.
+*   **Math 00C**: Functions, Tables, and Graphs.
 
 ### Math Foundations Track
 Focus: Learning the underlying mathematics from start to finish, built from scratch.
@@ -90,3 +115,32 @@ Focus: AI game playing algorithms.
    jupyter notebook
    ```
 4. Open the `mathematics/notebooks/` directory and start with `01_introductory_coding.ipynb`! Note that every notebook includes a Google Colab setup cell, so you can easily run them in the cloud.
+
+## Regeneration and Validation
+
+Generate the interactive Level 0 notebooks and instructor solutions:
+
+```bash
+python mathematics/notebooks/interactive_generator.py
+```
+
+Batch-migrate legacy notebooks into the interactive shell:
+
+```bash
+python mathematics/notebooks/batch_migrate_interactive.py
+```
+
+Complete the migrated legacy instructor solution notebooks:
+
+```bash
+python curriculum/complete_legacy_solutions.py
+```
+
+Run the verification checks:
+
+```bash
+python -m unittest tests.test_learning_tools
+python -m unittest tests.test_legacy_solution_bank
+python tests/validate_interactive_notebooks.py
+python tests/audit_solution_placeholders.py
+```
